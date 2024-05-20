@@ -47,27 +47,33 @@
                       <a href="#" class="nav-link">
                           <i class="nav-icon fas fa-tachometer-alt" style="color: white;"></i>
                           <p style="color: white;">
-                              Dashboard
+                              Dashboard Admin
                               <i class="right fas fa-angle-left"></i>
                           </p>
                       </a>
                       <ul class="nav nav-treeview">
                           <li class="nav-item">
-                              <a href="../../index.html" class="nav-link">
+                              <a href="dokter" class="nav-link">
                                   <i class="far fa-circle nav-icon" style="color: white;"></i>
-                                  <p style="color: white;">Dashboard v1</p>
+                                  <p style="color: white;">Dokter</p>
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a href="../../index2.html" class="nav-link">
+                              <a href="periksa" class="nav-link">
                                   <i class="far fa-circle nav-icon" style="color: white;"></i>
-                                  <p style="color: white;">Dashboard v2</p>
+                                  <p style="color: white;">Periksa</p>
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a href="../../index3.html" class="nav-link">
+                              <a href="pasien" class="nav-link">
                                   <i class="far fa-circle nav-icon" style="color: white;"></i>
-                                  <p style="color: white;">Dashboard v3</p>
+                                  <p style="color: white;">Pasien</p>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="unit" class="nav-link">
+                                  <i class="far fa-circle nav-icon" style="color: white;"></i>
+                                  <p style="color: white;">Unit</p>
                               </a>
                           </li>
                       </ul>
