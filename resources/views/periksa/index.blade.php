@@ -39,19 +39,21 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h4 class="my-4">Daftar Periksa</h4>
-                    <table class="table table-bordered table-hover">
-                        <thead class="thead-dark">
+                <h1 class="my-4">Daftar Periksa</h1>
+                    <a href="{{ route('periksas.create') }}" class="btn btn-primary">Tambah Periksa</a>
+                    <table class="table table-bordered">
+                        <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Pasien Id</th>
+                                <th>Create Id</th>
                                 <th>Dokter Id</th>
                                 <th>Berat</th>
                                 <th>Tinggi</th>
                                 <th>Tensi</th>
                                 <th>Keterangan</th>
+                                <th>Action</th>
                             </tr>
-                        </thead>
+                        </thead> 
                         <tbody>
                             @foreach ($list_periksa as $periksa)
                                 <tr>
@@ -62,6 +64,15 @@
                                     <td>{{ $periksa->tinggi }}</td>
                                     <td>{{ $periksa->tensi }}</td>
                                     <td>{{ $periksa->keterangan }}</td>
+                                    <td>
+    <a href="{{ route('periksas.show', $periksa->id) }}" class="btn btn-info btn-sm">Read</a>
+    <a href="{{ route('periksas.edit', $periksa->id) }}" class="btn btn-warning btn-sm">Update</a>
+    <form action="{{ route('periksas.destroy', $periksa->id) }}" method="POST" style="display: inline;">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this periksa?')">Delete</button>
+    </form>
+</td>
                                 </tr>
                             @endforeach
                         </tbody>

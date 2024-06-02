@@ -9,8 +9,6 @@ class Periksa extends Model
 {
     use HasFactory;
 
-
-    // Kolom yang dapat diisi
     protected $fillable = [
         'pasien_id',
         'dokter_id',
@@ -18,7 +16,7 @@ class Periksa extends Model
         'berat',
         'tinggi',
         'tensi',
-        'keterangan',
-       
     ];
 }
+
+
